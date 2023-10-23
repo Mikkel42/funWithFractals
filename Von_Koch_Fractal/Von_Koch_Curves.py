@@ -23,6 +23,7 @@ def von_koch_transform(x, y, angle):
     y3 = y[0] + 2 * l / 3 * np.sin(theta)
 
     return [x[0], x1, x2, x3, x[1]], [y[0], y1, y2, y3, y[1]]
+
 # Recursive function to draw a fractal using a transformation function
 def draw_fractal(N, x, y, angle, transform_fn):
     if N == 0:
